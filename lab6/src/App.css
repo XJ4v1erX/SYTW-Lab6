@@ -1,0 +1,121 @@
+.App {
+  background-image: url("https://wallpapercave.com/wp/wp4307535.jpg");
+  height: 100vh;
+  font-family: 'Exo';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.contenedorTablero {
+  width: 1024px;
+  height: 800px;
+  background-image: url("https://i.postimg.cc/bNtdmnHb/zyro-image1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1.titulo {
+  font-size: 34px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: auto 10px;
+  padding: 2px;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  margin-left: 205px;
+  margin-top: -9px;
+}
+
+.button-reload {
+  height: 40px;
+  width: 63px;
+  cursor: pointer;
+  background-color: rgba(191, 191, 191, 255);
+  box-shadow: inset 3px 5px 5px white;
+  border-width: 3px;
+}
+
+.reload {
+  height: 30px;
+  width: 30px;
+}
+
+button:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.05);
+}
+
+h2.turnCounter {
+  margin: 10px;
+  margin-left: 11px;
+  font-size: 30px;
+  color: rgba(97, 95, 95, 0.5)
+}
+
+.tablero {
+  height: 625px;
+  width: 650px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 155px;
+  grid-gap: 5px;
+}
+
+.game-won {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  font-size: 5rem;
+  z-index: 2;
+}
+
+.container-game-won {
+  height: 500px;
+  width: 992px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://i.postimg.cc/2S6FhJYT/951748-1.png");
+  background-repeat: no-repeat;
+}
+
+.wonMsj {
+  margin-top: -100px;
+  margin-left: 80px;
+  font-size: 45px;
+  background-color: rgba(191, 191, 191, 255);
+}
+
+.again {
+  margin-top: -160px;
+  margin-left: -150px;
+  height: 100px;
+  width: 310px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(191, 191, 191, 255);
+  box-shadow: inset 3px 5px 5px white;
+  border-width: 5px;
+}

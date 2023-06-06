@@ -1,0 +1,67 @@
+.Card {
+    height: 150px;
+    width: 145px;
+    border-radius: 5px;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    box-shadow: 0 0 3px black;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.Card .back:hover {
+
+animation: rotateX 0.5s forwards;
+}
+
+.Card img {
+    width: 135px;
+    height: 135px;
+    margin-top: -5px;
+    margin-left: -2px;
+    border-radius: 5px;
+}
+
+.Card .back {
+    cursor: pointer;
+    position: absolute;
+    top: 7.5px;
+    left: 10px;
+    right: 7.5px;
+    bottom: 7.5px;
+    transition: all ease-in 0.2s 0.2s;
+
+}
+
+.Card .front {
+    cursor: pointer;
+    position: absolute;
+    border-top: 7.5px;
+    left: 7.5px;
+    right: 7.5px;
+    bottom: 7.5px;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s 0.2s;
+    z-index: 1;
+    background-size: cover;
+
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition: all ease-in 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+    position: absolute;
+    transition: all ease-in 0.2s;
+}
